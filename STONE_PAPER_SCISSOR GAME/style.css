@@ -1,0 +1,102 @@
+h1{
+    text-align: center;
+    background-color: chartreuse;
+    width: 80%;
+    height: 50px;
+    margin-left: 150px;
+    border: solid black 2px;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+#score_board{
+    height: 100px;
+    width: 40%;
+    background-color: blanchedalmond;
+    margin-left: 400px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+input{
+    height: 50px;
+    width: 90%;
+    margin: 20px;
+    font-size: 35px;
+    border-radius: 10px;
+}
+#button{
+    height: 200px;
+    width: 80%;
+    border: solid black 2px;
+    background-color: aqua;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.Bn{
+    height: 100px;
+    width: 150px;
+    font-size: 30px;
+}
+.Bn:hover{
+    height: 110px;
+    width: 160px;
+    border: solid rgb(30, 240, 30) 10px;
+}
+
+#stone{
+    background-image: url(stone.jpeg);
+    color: red;
+    font-weight: bold;
+}
+#paper{
+    background-image: url(paper.jpeg);
+    color: red;
+    font-weight: bold;
+}
+#scissor{
+    background-image: url(scissor.jpeg);
+    color: red;
+    font-weight: bold;
+}
+#thread{
+    background-image: url(thread.jpeg);
+    color: red;
+    font-weight: bold;
+}
+
+.set{
+    height: 50px;
+    width:200px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+#reset{
+    background-color: rgb(241, 58, 7);
+}
+#equal{
+    background-color: rgb(7, 230, 96);
+}
+#basic{
+    height: 70px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+#equal:hover{
+    height: 60px;
+    width: 210px;
+    border: solid rgb(30, 240, 30) 10px;
+}
+#reset:hover{
+    height: 60px;
+    width: 210px;
+    background-color: rgb(241, 58, 7);
+}

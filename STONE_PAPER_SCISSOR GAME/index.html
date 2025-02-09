@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUCK GAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TRY YOUR LUCK</h1>
+    <div id="score_board">
+        <input type="text">
+    </div>
+    <div id="basic">
+        <button id="reset" class="set" onclick="score = '';
+        document.querySelector('input').value = score;
+        alert ('GAME IS RESET NOW YOU CAN START A NEW GAME');
+        ">RESET</button>
+
+        <button id="equal" class="set" onclick="score = eval(score);
+        document.querySelector('input').value = score;
+        if(score > '0'){
+            alert ('GAME IS OVER YOU WIN THE GAME');
+        }
+        else if(score == '0'){
+            alert ('THE GAME IS TIE ');
+        }
+        else{
+            alert ('GAME IS OVER YOU LOSS THE GAME');
+        }
+        ">CALCULATE</button>
+    </div>
+    <div id="button">
+
+        <button id="stone" class="Bn" onclick="user_choice = 'stone';
+        random_number = Math.random() * 4;
+        computer_choice = random_number < 1 ? 'stone' : random_number < 2 ? 'paper' : random_number < 3 ? 'scissor' : 'thread';
+        if (computer_choice === 'stone') {
+            alert ('Match is tie!!!');
+            score += '+0';
+        }
+        else if (computer_choice === 'paper'){
+            alert('You Loss ❌🤕');
+            score += '-1';
+        }
+        else if (computer_choice === 'scissor'){
+            alert('🎉🎉You Won🎉🎉');
+            score += '+1';
+        }
+        else{
+            alert('You Loss ❌🤕');
+            score += '-1';
+        }
+        document.querySelector('input').value = score;
+        ">STONE</button>
+
+        <button id="paper" class="Bn"  onclick="user_choice = 'paper';
+        random_number = Math.random() * 4;
+        computer_choice = random_number < 1 ? 'stone' : random_number < 2 ? 'paper' : random_number < 3 ? 'scissor' : 'thread';
+        if (computer_choice === 'stone') {
+            alert('🎉🎉You Won🎉🎉');
+            score += '+1';
+        }
+        else if (computer_choice === 'paper'){
+            alert ('Match is tie!!!');
+            score += '+0';
+        }
+        else if (computer_choice === 'scissor'){
+            alert('You Loss ❌🤕');
+            score += '-1';
+        }
+        else{
+            alert('You Loss ❌🤕');
+            score += '-1';    
+        }
+        document.querySelector('input').value = score;
+        "">PAPER</button>
+
+        <button id="scissor" class="Bn" onclick="user_choice = 'scissor';
+        random_number = Math.random() * 4;
+        computer_choice = random_number < 1 ? 'stone' : random_number < 2 ? 'paper' : random_number < 3 ? 'scissor' : 'thread';
+        if (computer_choice === 'stone') {
+            alert('You Loss ❌🤕');
+            score += '-1';
+        }
+        else if (computer_choice === 'paper'){
+            alert('🎉🎉You Won🎉🎉');
+            score += '+1';
+        }
+        else if (computer_choice === 'scissor'){
+            alert ('Match is tie!!!');
+            score += '+0';
+        }
+        else{
+            alert('🎉🎉You Won🎉🎉');
+            score += '+1';    
+        }
+        document.querySelector('input').value = score;
+        ">SCISSOR</button>
+
+        <button id="thread" class="Bn" onclick="user_choice = 'thread';
+        random_number = Math.random() * 4;
+        computer_choice = random_number < 1 ? 'stone' : random_number < 2 ? 'paper' : random_number < 3 ? 'scissor' : 'thread';
+        if (computer_choice === 'stone') {
+            alert('🎉🎉You Won🎉🎉');
+            score += '+1';
+        }
+        else if (computer_choice === 'paper'){
+            alert('🎉🎉You Won🎉🎉');
+            score += '+1';
+        }
+        else if (computer_choice === 'scissor'){
+            alert('You Loss ❌🤕');
+            score += '-1';
+        }
+        else{
+            alert ('Match is tie!!!');
+            score += '+0';    
+        }
+        document.querySelector('input').value = score;
+        ">THREAD</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
