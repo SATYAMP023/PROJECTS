@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+}
+
+#container{
+    height: 700px;
+    width: 28%;
+    border: solid rgb(201, 200, 200) 2px;
+    margin-left: 35%;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+input{
+    height: 80px;
+    width: 90%;
+    font-size: 50px;
+    border-radius: 5px;
+    margin: 15px;
+}
+.box{
+    height: 70px;
+    width: 70px;
+    border: solid rgb(11, 0, 0) 1px;
+    background-color: rgb(238, 236, 236);
+    margin: 10px;
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
